@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Quote | Integration Logistics Inc.</title>
+  <meta name="description" content="Canadian freight forwarding, rail drayage, air cargo recovery, customs coordination, and final mile delivery solutions.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html">Integration Logistics Inc.</a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="quote.html">Request a Quote</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn" href="quote.html">Get a Quote</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Request a Quote</h1>
+    <p>Send us your shipment details and we will review available transportation options for your cargo.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <form class="form" action="mailto:info@integration-logistics.com" method="post" enctype="text/plain">
+      <div><label>Company Name</label><input name="Company Name" required></div>
+      <div><label>Contact Name</label><input name="Contact Name" required></div>
+      <div><label>Email</label><input type="email" name="Email" required></div>
+      <div><label>Phone</label><input name="Phone"></div>
+      <div><label>Origin</label><input name="Origin" placeholder="City, province / terminal / airport"></div>
+      <div><label>Destination</label><input name="Destination" placeholder="City, province / delivery address"></div>
+      <div><label>Shipment Type</label>
+        <select name="Shipment Type">
+          <option>Air Freight</option><option>Ocean FCL</option><option>Ocean LCL</option><option>Rail Drayage</option><option>Domestic Trucking</option><option>Other</option>
+        </select>
+      </div>
+      <div><label>Commodity</label><input name="Commodity"></div>
+      <div><label>Weight</label><input name="Weight" placeholder="kg / lbs"></div>
+      <div><label>Dimensions</label><input name="Dimensions" placeholder="L x W x H"></div>
+      <div class="full"><label>Additional Details</label><textarea name="Additional Details" placeholder="Container number, rail terminal, cargo ready date, receiving hours, special requirements, etc."></textarea></div>
+      <div class="full"><button class="btn" type="submit">Submit Quote Request</button></div>
+    </form>
+    <div class="notice">Note: This form uses email submission. For a production website, we recommend connecting it to a secure online form service or CRM.</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>Integration Logistics Inc.</strong>
+        <p>Reliable freight forwarding, rail drayage, air cargo recovery, customs coordination, and final mile delivery support across Canada.</p>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="quote.html">Request a Quote</a>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:info@integration-logistics.com">info@integration-logistics.com</a>
+        <span>Toronto, Ontario, Canada</span>
+      </div>
+    </div>
+    <div class="small">© 2026 Integration Logistics Inc.. All rights reserved. Customs brokerage services are provided only where applicable by licensed customs brokers.</div>
+  </div>
+</footer>
+</body>
+</html>
