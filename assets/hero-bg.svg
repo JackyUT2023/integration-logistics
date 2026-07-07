@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07172c"/>
+      <stop offset="55%" stop-color="#0b2e6d"/>
+      <stop offset="100%" stop-color="#2152d8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="28%" r="48%">
+      <stop offset="0%" stop-color="#8ec5ff" stop-opacity=".44"/>
+      <stop offset="100%" stop-color="#8ec5ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#fff" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="1440" height="760" fill="url(#bg)"/>
+  <rect width="1440" height="760" fill="url(#grid)"/>
+  <circle cx="1040" cy="170" r="320" fill="url(#glow)"/>
+  <path d="M-10 520 C210 390, 370 590, 620 450 S1100 230, 1450 390" fill="none" stroke="#9dccff" stroke-opacity=".32" stroke-width="4"/>
+  <path d="M60 620 C310 500, 530 640, 760 540 S1120 360, 1380 470" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3"/>
+  <g fill="#fff" opacity=".12">
+    <circle cx="120" cy="120" r="5"/><circle cx="158" cy="144" r="5"/><circle cx="197" cy="113" r="5"/>
+    <circle cx="237" cy="154" r="5"/><circle cx="273" cy="127" r="5"/><circle cx="314" cy="163" r="5"/>
+    <circle cx="350" cy="138" r="5"/>
+  </g>
+  <g transform="translate(815 195)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" opacity=".88">
+    <path d="M0 126 L348 58 C390 50 410 69 379 98 L294 154 L219 136 L149 197 L103 185 L149 121 L0 126Z" fill="#fff" opacity=".12" stroke-width="4"/>
+    <path d="M150 118 L275 35" stroke-width="6"/>
+  </g>
+  <g transform="translate(714 472)" fill="#fff" opacity=".18">
+    <rect x="0" y="45" width="270" height="70" rx="14"/>
+    <rect x="26" y="4" width="86" height="41" rx="6"/>
+    <rect x="122" y="16" width="86" height="29" rx="6"/>
+    <circle cx="66" cy="128" r="18"/>
+    <circle cx="196" cy="128" r="18"/>
+  </g>
+  <g transform="translate(220 470)" fill="#fff" opacity=".16">
+    <rect x="0" y="0" width="350" height="62" rx="14"/>
+    <rect x="18" y="-44" width="66" height="44" rx="6"/>
+    <rect x="94" y="-44" width="66" height="44" rx="6"/>
+    <rect x="170" y="-44" width="66" height="44" rx="6"/>
+    <circle cx="66" cy="78" r="16"/>
+    <circle cx="158" cy="78" r="16"/>
+    <circle cx="250" cy="78" r="16"/>
+  </g>
+</svg>
