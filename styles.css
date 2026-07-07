@@ -31,19 +31,18 @@ img{display:block;max-width:100%}
 .hero{
   position:relative;
   overflow:hidden;
-  min-height:390px;
-  display:flex;
-  align-items:center;
   background:
     linear-gradient(90deg,
       rgba(6,34,80,.96) 0%,
-      rgba(6,34,80,.92) 32%,
-      rgba(7,49,111,.72) 52%,
-      rgba(7,49,111,.28) 70%,
-      rgba(7,49,111,0) 100%
+      rgba(6,34,80,.94) 35%,
+      rgba(6,34,80,.72) 55%,
+      rgba(6,34,80,.30) 75%,
+      rgba(6,34,80,.08) 100%
     ),
-    url('assets/hero-photo.jpg') right center / auto 100% no-repeat,
-    #0b2e6d;
+    url('assets/hero-photo.jpg') center center / cover no-repeat;
+  min-height:360px;
+  display:flex;
+  align-items:center;
 }
 
 .hero::before{
@@ -52,11 +51,12 @@ img{display:block;max-width:100%}
   left:0;
   top:0;
   bottom:0;
-  width:32%;
+  width:34%;
   background-image:radial-gradient(rgba(255,255,255,.18) 1px, transparent 1px);
   background-size:12px 12px;
   opacity:.22;
   pointer-events:none;
+  z-index:1;
 }
 
 .hero-inner{
@@ -64,23 +64,29 @@ img{display:block;max-width:100%}
   z-index:2;
   padding:38px 0 46px;
   color:#fff;
-  max-width:700px;
+  max-width:640px;
 }
 
 .hero h1{
-  font-size:56px;
-  line-height:1.03;
+  font-size:52px;
+  line-height:1.05;
   letter-spacing:-.03em;
   margin:0 0 18px;
   font-weight:800;
 }
 
 .hero p{
-  font-size:21px;
+  font-size:20px;
   line-height:1.55;
-  max-width:610px;
-  margin:0 0 30px;
+  max-width:590px;
+  margin:0 0 28px;
   color:#e8eef7;
+}
+
+.feature-wrap{
+  margin-top:-22px;
+  position:relative;
+  z-index:3;
 }
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--blue);color:#fff;border:0;border-radius:10px;padding:16px 34px;font-size:18px;font-weight:700;box-shadow:var(--shadow);cursor:pointer}
 .btn:hover{background:#0a56c6}
