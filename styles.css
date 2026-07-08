@@ -154,3 +154,155 @@ img{display:block;max-width:100%}
   .page-hero p{font-size:18px}
   .feature-card{padding:22px 20px}
 }
+
+
+
+/* Mobile header/navigation fix */
+@media (max-width:760px){
+  html, body{
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  .container{
+    width:min(100% - 32px, 1240px);
+  }
+
+  .header{
+    position:relative;
+  }
+
+  .nav{
+    display:block;
+    padding:12px 0 10px;
+  }
+
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    width:100%;
+    margin-bottom:8px;
+  }
+
+  .brand img{
+    width:64px;
+    flex:0 0 auto;
+  }
+
+  .brand-text .line1,
+  .brand-text .line2{
+    font-size:17px;
+    line-height:.95;
+    letter-spacing:.02em;
+  }
+
+  .header-right{
+    display:block;
+    width:100%;
+  }
+
+  .contact-mini{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:8px;
+    flex-wrap:wrap;
+    font-size:12px;
+    margin:4px 0 8px;
+    white-space:normal;
+  }
+
+  .lang-switch{
+    border-left:1px solid #d8e2ef;
+    padding-left:10px;
+    margin-left:4px;
+  }
+
+  .menu{
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;
+    gap:8px;
+    width:100%;
+    padding:8px 0 4px;
+    justify-content:flex-start;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+
+  .menu::-webkit-scrollbar{
+    display:none;
+  }
+
+  .menu a{
+    flex:0 0 auto;
+    font-size:13px;
+    padding:8px 12px;
+    border:1px solid #e4eaf3;
+    background:#fff;
+    box-shadow:0 3px 10px rgba(16,24,40,.04);
+  }
+
+  .menu a.active{
+    background:#edf4ff;
+    border-color:#d7e7ff;
+  }
+
+  .menu a::after{
+    display:none;
+  }
+
+  .hero{
+    min-height:430px;
+  }
+
+  .hero-inner{
+    padding:44px 0 56px;
+    max-width:100%;
+  }
+
+  .hero h1{
+    font-size:36px;
+    line-height:1.08;
+    letter-spacing:-.025em;
+  }
+
+  .hero p{
+    font-size:17px;
+    line-height:1.55;
+    max-width:100%;
+  }
+
+  .feature-wrap{
+    margin-top:22px;
+  }
+}
+
+@media (max-width:420px){
+  .container{
+    width:min(100% - 24px, 1240px);
+  }
+
+  .brand img{
+    width:58px;
+  }
+
+  .brand-text .line1,
+  .brand-text .line2{
+    font-size:15px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .btn{
+    width:100%;
+  }
+}
