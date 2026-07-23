@@ -8,19 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-  <div class="container nav">
-    <a class="logo" href="index.html">Integration Logistics Inc.</a>
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="quote.html">Request a Quote</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a class="btn" href="quote.html">Get a Quote</a>
-  </div>
-</header>
+<header class="header"><div class="container nav"><a class="brand" href="index.html"><img src="assets/logo-mark.png" alt="Integration Logistics logo"><div class="brand-text"><div class="line1">INTEGRATION</div><div class="line2">LOGISTICS INC.</div></div></a><div class="header-right"><div class="contact-mini">✉️ <a href="mailto:info@integration-logistics.com">info@integration-logistics.com</a><a class="lang-switch" href="index-cn.html">中文</a></div><nav class="menu" aria-label="Primary navigation"><a href="index.html" class="">Home</a><a href="about.html" class="active">About</a><div class="nav-dropdown"><button class="nav-dropdown-toggle" type="button" aria-expanded="false">Services</button><div class="nav-dropdown-menu"><a href="services.html" class="">All Services</a><a href="rail-drayage.html" class="">Rail Drayage</a><a href="air-freight.html" class="">Air Freight</a></div></div><div class="nav-dropdown"><button class="nav-dropdown-toggle" type="button" aria-expanded="false">Logistics Tools</button><div class="nav-dropdown-menu"><a href="warehouse-locator.html" class="">Warehouse Locator</a><a href="track-shipment.html" class="">Track Shipment</a><a href="resources.html" class="">Resources</a></div></div><a href="quote.html" class="nav-primary-cta">Request Quote</a><a href="contact.html" class="">Contact</a></nav></div></div></header>
 
 <section class="page-hero">
   <div class="container">
@@ -74,5 +62,5 @@
     <div class="small">© 2026 Integration Logistics Inc.. All rights reserved. Customs brokerage services are provided only where applicable by licensed customs brokers.</div>
   </div>
 </footer>
-</body>
+<script>(function(){document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn){btn.addEventListener('click',function(e){e.stopPropagation();var parent=btn.closest('.nav-dropdown');document.querySelectorAll('.nav-dropdown.open').forEach(function(x){if(x!==parent)x.classList.remove('open')});parent.classList.toggle('open');btn.setAttribute('aria-expanded',parent.classList.contains('open')?'true':'false')})});document.addEventListener('click',function(){document.querySelectorAll('.nav-dropdown.open').forEach(function(x){x.classList.remove('open');var b=x.querySelector('.nav-dropdown-toggle');if(b)b.setAttribute('aria-expanded','false')})})})();</script></body>
 </html>
